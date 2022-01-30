@@ -1,0 +1,159 @@
+/* Global styles
+--------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *after{
+    box-sizing: inherit;
+}
+body{
+    color:rgb(16, 72, 128);
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.project-item img#pic1{
+    width:300px;
+}
+.project-item img#pic2{
+    width:450px;
+}
+a{
+    color:rgb(29, 113, 209)
+}
+a:hover{
+    text-decoration: none;
+}
+h2{
+    margin:0;
+}
+h1, h2 {
+    font-family:'Tangerine', cursive;
+    font-weight: 2rem;
+    text-shadow: 4px 4px 4px #aaa;
+    margin: 0;
+    font-weight: 400px;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+.content-wrap{
+    max-width:900px;
+    width: 85%;
+    margin:0 auto;
+    padding: 60px 0;
+}
+h3{
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.divider > section:last-of-type {
+    border-bottom-style: none;
+}
+/* profile 
+----------------------------------------*/
+header{
+    background:cornsilk;
+    
+}
+
+/* Project
+-------------------------------------------*/
+.projects {
+    background:lavender;
+}
+
+.projects .btn {
+    color:rgb(245, 0, 82);
+    background:rgb(20, 3, 65);
+    text-decoration: none;
+    padding:8px;
+    border-radius:4px;
+    display:inline-block;
+}
+.projects .btn:hover{
+    background:rgb(20, 3, 65, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed rgb(20, 3, 65);
+    padding: 25px 0 ;
+}
+
+
+.project-item h3 {
+    margin-top: 0;
+}
+/* Work Experience 
+--------------------------------------------------*/
+.work-experience{
+background:lightcyan;
+}
+
+/* Education
+------------------------------------------------*/
+.education{
+    background-image: url(../placeholderimages/hello.jpg);
+    background-size:cover;
+    background-position:top right ;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 80%;
+}
+/* Contact info 
+-------------------------------------------------*/
+footer{
+    background: lightpink;
+    
+}
+ li a{
+color:rgb(51, 51, 129)
+} 
+.content-list{
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+}
+.content-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* responsive style 
+----------------------------------------*/
+@media screen and (min-width:750px){
+    header, footer{
+        text-align: center;
+    }
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width:749px){
+    h1 {
+        font-size: 75px;
+        margin-bottom:20px ;
+    }
+    h1,h2 {
+        line-height:1 ;
+    }
+}
